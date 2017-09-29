@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+//fonts
+@font-face{font-family:'MuseoSans-Bold';src:local('MuseoSansCyrl-900'),url('https://nomail.com.ua/files/woff/73e5c73d4e80e6c080cd1bc5894cf3e8.woff') format('woff');}
+@font-face{font-family:'MuseoSans-Normal';src:local('MuseoSansCyrl-500'),url('https://nomail.com.ua/files/woff/02f7d6b8e3cda79742b374cbc5595a8f.woff') format('woff');}
+@font-face{font-family:'MuseoSans-Light';src:local('MuseoSansCyrl-100'),url('https://nomail.com.ua/files/woff/1913b09835e902f7123ad3ac38b4cd93.woff') format('woff');}
+
+
+//
+
+%wr{
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+$medium_size: 768px;
+
+
+$gray_dark: #1a1a1a;
+$gray_light: #edecec;
+$red: #bf1c22;
+
+
+//
+
+@for $i from 0 through 360{
+  .rotate-#{$i}{transform: rotate($i + deg);}
+}
